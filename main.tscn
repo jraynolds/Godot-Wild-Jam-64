@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://uil4n0h1ub3w"]
+
+[ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://box.tscn" id="1_njr1o"]
+[ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="1_pxdj3"]
+[ext_resource type="PackedScene" uid="uid://c556lsh06eq55" path="res://eye.tscn" id="3_62mb0"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_tife1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0n2c8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_te51r"]
+size = Vector3(25, 0.1, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4fpqp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wf5ym"]
+size = Vector3(25, 25, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7wing"]
+size = Vector3(0.5, 25, 10)
+
+[node name="Main" type="Node3D"]
+
+[node name="Background" type="MeshInstance3D" parent="."]
+transform = Transform3D(27.3224, 0, 0, 0, 8.81831, 0, 0, 0, 1, 0, 3.48272, -6.98658)
+mesh = SubResource("QuadMesh_tife1")
+
+[node name="Floor" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.886408, -1.80955)
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+physics_material_override = SubResource("PhysicsMaterial_0n2c8")
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1.08612, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_te51r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(27.1529, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_4fpqp")
+
+[node name="Box" parent="." instance=ExtResource("1_njr1o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.796748, -0.423533)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.979368, 0.202087, 0, -0.202087, 0.979368, 0, 3.05217, 9.2339)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_pxdj3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53551, 0.191677, 0.717319)
+collision_mask = 5
+axis_lock_linear_y = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.605683, 0.795706, 0, -0.795706, -0.605683, 3.42017, 12.9571, -9.60706)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.972901, 0.231222, 0, -0.231222, 0.972901, 0, 8.50481, 15.4935)
+light_energy = 0.39
+
+[node name="Bumpers" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 0
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bumpers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.54491)
+shape = SubResource("BoxShape3D_wf5ym")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bumpers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.11993)
+shape = SubResource("BoxShape3D_wf5ym")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Bumpers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7193, 0, 0)
+shape = SubResource("BoxShape3D_7wing")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Bumpers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0233, 0, 0)
+shape = SubResource("BoxShape3D_7wing")
+
+[node name="Eye" parent="." instance=ExtResource("3_62mb0")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 4.72139, -6.76561)

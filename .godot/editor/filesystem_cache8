@@ -1,7 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702078701
+::res://::1702121854
+box.tscn::PackedScene::298830849217042614::1702121394::0::1::::<><>::uid://bavdcypy5nebg::::res://components/pushable.tscn
+character.gd::GDScript::-1::1702121300::0::1::::<>CharacterBody3D<>::
+character.tscn::PackedScene::5039455664515593834::1702121341::0::1::::<><>::res://character.gd<>uid://byxyolcjy1svk::::res://character_shader_material.tres<>uid://d0tit4w7mvkiv::::res://components/player_input.tscn
+character_shader_material2.tres::VisualShader::7520544632956009691::1702118825::0::1::::<><>::uid://cm0yap84srsac::::res://spookgirl.png
+character_shader_material.tres::ShaderMaterial::4119916409578811532::1702118825::0::1::::<><>::uid://dffajhwyxtsal::::res://character_shader_material2.tres
+DrawLine3D.gd::GDScript::-1::1702121799::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::8258913955116405833::1702064497::1702064505::1::::<><>::
+main.tscn::PackedScene::1421012291514042162::1702121341::0::1::::<><>::uid://ei0x2xtv40le::::res://box.tscn<>uid://cd2fdl5jaf4ug::::res://character.tscn
 README.md::TextFile::-1::1702064615::0::1::::<><>::
-character.tscn::PackedScene::8955314116551533420::1702078701::0::1::::<><>::uid://dpwxdu1awqk3j::::res://icon.svg
-player input.tscn::PackedScene::8953727544017231413::1702078756::0::1::::<><>::
-test_scene.tscn::PackedScene::1653013803531872139::1702078451::0::1::::<><>::
+spookgirl.png::CompressedTexture2D::5668174982891648466::1702118453::1702118804::1::::<><>::
+test_scene.tscn::PackedScene::1347186396754961551::1702121341::0::1::::<><>::
+::res://components/::1702121801
+player_input.gd::GDScript::-1::1702121056::0::1::::PlayerInput<>Node3D<>::
+player_input.tscn::PackedScene::8953727544017231413::1702121341::0::1::::<><>::res://components/player_input.gd
+pushable.gd::GDScript::-1::1702121327::0::1::::Pushable<>Node3D<>::
+pushable.tscn::PackedScene::2429959623957991104::1702121341::0::1::::<><>::res://components/pushable.gd
+ray_to_player.gd::GDScript::-1::1702121435::0::1::::<>Node3D<>::
+ray_to_player.tscn::PackedScene::2255578245676276965::1702121413::0::1::::<><>::
+::res://managers/::1702121854

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bavdcypy5nebg"]
+
+[ext_resource type="Script" path="res://components/pushable.gd" id="1_uly2a"]
+
+[node name="Pushable" type="Node3D"]
+script = ExtResource("1_uly2a")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]

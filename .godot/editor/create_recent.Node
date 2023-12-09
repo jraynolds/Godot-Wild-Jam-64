@@ -1,5 +1,15 @@
+RayCast3D
+MeshInstance3D
+Line2D
+CollisionShape3D
+Area3D
+RigidBody3D
+Node3D
+DirectionalLight3D
+CharacterBody3D
+Camera3D
+TextureRect
 RigidBody2D
 CollisionShape2D
 Node2D
-TextureRect
 CharacterBody2D

@@ -1,0 +1,5 @@
+RigidBody2D
+CollisionShape2D
+Node2D
+TextureRect
+CharacterBody2D

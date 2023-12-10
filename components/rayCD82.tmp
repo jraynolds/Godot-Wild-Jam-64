@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://7evbrb0rqkj2"]
+
+[ext_resource type="Script" path="res://components/ray_to_player.gd" id="1_r6eld"]
+
+[node name="RayToPlayer" type="RayCast3D"]
+collision_mask = 3
+collide_with_areas = true
+script = ExtResource("1_r6eld")
+color = Color(1, 0.568627, 0, 1)

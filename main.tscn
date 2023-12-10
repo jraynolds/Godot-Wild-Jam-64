@@ -60,10 +60,15 @@ axis_lock_angular_z = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.605683, 0.795706, 0, -0.795706, -0.605683, 3.42017, 12.9571, -9.60706)
+visible = false
 
 [node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.972901, 0.231222, 0, -0.231222, 0.972901, 0, 8.50481, 15.4935)
-light_energy = 0.39
+light_energy = 0.01
+light_indirect_energy = 0.0
+shadow_enabled = true
+shadow_blur = 0.0
+sky_mode = 1
 
 [node name="Bumpers" type="RigidBody3D" parent="."]
 collision_layer = 4
@@ -93,4 +98,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0233, 0, 0)
 shape = SubResource("BoxShape3D_7wing")
 
 [node name="Eye" parent="." instance=ExtResource("3_62mb0")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 4.72139, -6.76561)
+transform = Transform3D(3, 0, 0, 0, 2.53136, -1.61004, 0, 1.61004, 2.53136, 0, 4.72139, -6.76561)

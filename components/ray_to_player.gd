@@ -18,6 +18,7 @@ func _process(delta):
 
 
 func _physics_process(delta):
+	global_rotation_degrees = Vector3.ZERO
 	target_position = PlayerManager.character.global_position - global_position
 	
 	if is_colliding():

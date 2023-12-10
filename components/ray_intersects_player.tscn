@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5eoyvtff7fuc"]
+
+[ext_resource type="Script" path="res://components/ray_intersects_player.gd" id="1_i76t0"]
+
+[node name="RayIntersectsPlayer" type="RayCast3D"]
+target_position = Vector3(0, 0, 1)
+script = ExtResource("1_i76t0")

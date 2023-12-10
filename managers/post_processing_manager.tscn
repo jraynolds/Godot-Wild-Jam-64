@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq32kp2ht4y1q"]
+
+[sub_resource type="Environment" id="Environment_g4swv"]
+ambient_light_source = 1
+ambient_light_energy = 0.0
+fog_density = 0.09
+volumetric_fog_enabled = true
+adjustment_enabled = true
+
+[node name="PostProcessingManager" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_g4swv")

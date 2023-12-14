@@ -39,6 +39,10 @@ func _physics_process(delta):
 		pushed_object.move(body.position - body_starting_position)
 
 
-
+func toggle_pushed(pushable : Pushable):
+	if pushed_object == pushable:
+		pushed_object = null
+	else :
+		pushed_object = pushable
 
 

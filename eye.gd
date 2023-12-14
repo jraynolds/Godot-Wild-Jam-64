@@ -28,6 +28,7 @@ func _process(delta):
 
 func _player_found():
 	if !sees_player:
+		animation_player.play("RESET")
 		animation_player.stop()
 		rotate_node.look_at(PlayerManager.character.global_transform.origin, Vector3(0, 0, -1), true)
 		alert_time_left = alert_time
@@ -46,7 +47,7 @@ func _play_animation_after_wait():
 	tween.tween_property(rotate_node, "rotation_degrees", Vector3(0, 0, 0), 1)
 	tween.tween_callback(
 		func(): 
-			animation_player.play("searching")
+			animation_player.play("Searching")
 	)
 	tween.play()
 

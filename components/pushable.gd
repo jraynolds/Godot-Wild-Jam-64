@@ -6,6 +6,7 @@ class_name Pushable
 @onready var _area : Area3D = $Area3D
 @onready var _area_collider : CollisionShape3D = $Area3D/CollisionShape3D
 @export var area_expansion : Vector3
+@export var player_inside : bool
 
 @export var move_speed_multiplier : float
 
@@ -21,24 +22,24 @@ func _ready():
 	_area.body_exited.connect(on_body_exited)
 
 
+func _process(delta):
+	if Input.is_action_just_pressed("character_activate"):
+		toggle_push()
+
 func move(translation : Vector3):
 	rigid_body.position += translation
 
 func on_body_entered(enterer: Node):
-	print("Entered by " + enterer.name)
-	if enterer is CharacterBody3D: push_begin(enterer)
+	if enterer is CharacterBody3D: 
+		player_inside = true
+		OverlayManager.show_box_interaction_readout()
 
 
 func on_body_exited(exiter: Node):
-	print("Exited by " + exiter.name)
-	if exiter is CharacterBody3D: push_end(exiter)
+	if exiter is CharacterBody3D:
+		player_inside = false 
+		OverlayManager.set_interaction_panel_visible(false)
 
 
-func push_begin(character : CharacterBody3D):
-	print("beginning to push!")
-	character.push_begin(self, move_speed_multiplier)
-
-
-func push_end(character : CharacterBody3D):
-	print("ending the push!")
-	#character.push_end(rigid_body, move_speed_multiplier)
+func toggle_push():
+	PlayerManager.get_character().toggle_pushed(self)

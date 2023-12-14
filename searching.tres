@@ -1,0 +1,46 @@
+[gd_resource type="Animation" format=3 uid="uid://lytf31nnlhi7"]
+
+[resource]
+resource_name = "Searching"
+length = 2.7
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Armature:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.872665, 0), Vector3(0, 0, 0), Vector3(0, 0.872665, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Armature/Skeleton3D:EyelidLower")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(2.21753, 1, 0.470951, 6.66012e-08, -3.72406e-07, 0.88216, 2.3, 1, 0.0431273, -0.00280164, 0.00207245, 0.999064, 2.35, 1, 0.0431273, -0.00280164, 0.00207245, 0.999064, 2.41667, 1, 0.470951, 6.66012e-08, -3.72406e-07, 0.88216, 2.48333, 1, 0.0431273, -0.00280164, 0.00207245, 0.999064, 2.58333, 1, 0.0431273, -0.00280164, 0.00207245, 0.999064, 2.65, 1, 0.470951, 6.66012e-08, -3.72406e-07, 0.88216)
+tracks/2/type = "position_3d"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("Armature/Skeleton3D:EyeGlare1")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(2.21753, 1, 0.117678, 1.49305, -0.106626)
+tracks/3/type = "position_3d"
+tracks/3/imported = false
+tracks/3/enabled = false
+tracks/3/path = NodePath("Armature/Skeleton3D:EyeGlare2")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(2.21753, 1, -0.142267, 1.49305, 0.109262)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Armature/Skeleton3D:EyelidUpper")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(2.21753, 1, -0.470454, -3.8572e-08, 4.28095e-07, 0.882425, 2.3, 1, 0.0339229, -4.36862e-08, -3.08686e-08, 0.999424, 2.35, 1, 0.0339229, -4.36862e-08, -3.08686e-08, 0.999424, 2.41667, 1, -0.470454, -3.8572e-08, 4.28095e-07, 0.882425, 2.48333, 1, 0.0339229, -4.36862e-08, -3.08686e-08, 0.999424, 2.58333, 1, 0.0339229, -4.36862e-08, -3.08686e-08, 0.999424, 2.65, 1, -0.470454, -3.8572e-08, 4.28095e-07, 0.882425)

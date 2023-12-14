@@ -1,5 +1,7 @@
-res://test_scene.tscn
+res://eye2.tscn
 res://character_shader_material2.tres
+res://searching.tres
+res://test_scene.tscn
 res://components/player_input.tscn
 res://main.tscn
 res://character.tscn
@@ -13,4 +15,10 @@ res://managers/post_processing_manager.tscn
 res://fog_cloud.tscn
 res://fog.tscn
 res://components/ray_intersects_player.tscn
-res://eye2.tscn
+res://eye.gd
+res://managers/overlay_manager.tscn
+res://managers/overlay_manager.gd
+res://components/pushable.gd
+res://crate.tscn
+res://components/player_input.gd
+res://character.gd

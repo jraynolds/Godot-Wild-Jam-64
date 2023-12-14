@@ -10,5 +10,5 @@ func _ready():
 	player_input = $PlayerInput as PlayerInput
 
 
-func push_begin(pushable : Pushable, move_speed_reduction : float):
-	player_input.pushed_object = pushable
+func toggle_pushed(pushable : Pushable):
+	player_input.toggle_pushed(pushable)

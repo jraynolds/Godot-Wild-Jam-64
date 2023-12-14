@@ -15,23 +15,6 @@ material = SubResource("StandardMaterial3D_slgk8")
 inner_radius = 0.167
 outer_radius = 0.44
 
-[sub_resource type="Animation" id="Animation_j3vut"]
-resource_name = "searching"
-length = 2.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Rotateables:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, -0.872665, 0), Vector3(0, 0, 0), Vector3(0, 0.872665, 0), Vector3(0, 0, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_22yg4"]
 length = 0.001
 tracks/0/type = "value"
@@ -60,6 +43,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(1.21649, 0, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j3vut"]
+resource_name = "searching"
+length = 2.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Rotateables:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.872665, 0), Vector3(0, 0, 0), Vector3(0, 0.872665, 0), Vector3(0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4d5if"]

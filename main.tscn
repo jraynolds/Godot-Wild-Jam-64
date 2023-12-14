@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://box.tscn" id="1_njr1o"]
 [ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="1_pxdj3"]
-[ext_resource type="PackedScene" uid="uid://c556lsh06eq55" path="res://eye.tscn" id="3_62mb0"]
+[ext_resource type="PackedScene" uid="uid://jbk43htjdvrh" path="res://eye2.tscn" id="3_ytyl8"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_tife1"]
 
@@ -97,5 +97,5 @@ shape = SubResource("BoxShape3D_7wing")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0233, 0, 0)
 shape = SubResource("BoxShape3D_7wing")
 
-[node name="Eye" parent="." instance=ExtResource("3_62mb0")]
-transform = Transform3D(3, 0, 0, 0, 2.53136, -1.61004, 0, 1.61004, 2.53136, 0, 4.72139, -6.76561)
+[node name="eyejam2" parent="." instance=ExtResource("3_ytyl8")]
+transform = Transform3D(1, 0, 0, 0, 0.891418, -0.453182, 0, 0.453182, 0.891418, 0, 5.59333, -5.9331)

@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyp1xtm78gyie"]
+
+[ext_resource type="PackedScene" uid="uid://d3xwxie2x3s0x" path="res://cratejam1.gltf" id="1_agfc3"]
+
+[node name="cratejam1" instance=ExtResource("1_agfc3")]

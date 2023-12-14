@@ -1,11 +1,10 @@
-res://character_shader_material2.tres
-res://box.tscn
-res://Material.tres
 res://test_scene.tscn
+res://character_shader_material2.tres
 res://components/player_input.tscn
 res://main.tscn
 res://character.tscn
 res://components/pushable.tscn
+res://box.tscn
 res://components/ray_to_player.tscn
 res://managers/player_manager.tscn
 res://eye.tscn
@@ -15,5 +14,3 @@ res://fog_cloud.tscn
 res://fog.tscn
 res://components/ray_intersects_player.tscn
 res://eye2.tscn
-res://EyeBlink1.res
-res://eye.gd

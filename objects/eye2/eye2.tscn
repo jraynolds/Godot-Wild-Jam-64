@@ -1,14 +1,14 @@
 [gd_scene load_steps=26 format=3 uid="uid://jbk43htjdvrh"]
 
-[ext_resource type="Animation" uid="uid://mlao6ok1dyf2" path="res://Armature.res" id="1_0admf"]
-[ext_resource type="Script" path="res://eye.gd" id="1_ma5hd"]
+[ext_resource type="Animation" uid="uid://mlao6ok1dyf2" path="res://objects/eye2/Armature.res" id="1_0admf"]
+[ext_resource type="Script" path="res://objects/eye.gd" id="1_ma5hd"]
 [ext_resource type="PackedScene" uid="uid://c5eoyvtff7fuc" path="res://components/ray_intersects_player.tscn" id="2_4p5c8"]
-[ext_resource type="Animation" uid="uid://bropgmeeiay4" path="res://ArmatureAction.res" id="2_y6v0i"]
-[ext_resource type="Animation" uid="uid://b5bxtegc7ffbj" path="res://Closed.res" id="3_eer25"]
-[ext_resource type="Animation" uid="uid://h85fjblgerti" path="res://Closed_001.res" id="4_ksx4x"]
-[ext_resource type="Animation" uid="uid://cs7vacvpbt8ap" path="res://EyeBlink1.res" id="5_ld1lp"]
-[ext_resource type="Animation" uid="uid://e1idg5rfsxaq" path="res://Eyeblionk2.tres" id="8_dsk33"]
-[ext_resource type="Animation" uid="uid://lytf31nnlhi7" path="res://searching.tres" id="9_l7d37"]
+[ext_resource type="Animation" uid="uid://bropgmeeiay4" path="res://objects/eye2/ArmatureAction.res" id="2_y6v0i"]
+[ext_resource type="Animation" uid="uid://b5bxtegc7ffbj" path="res://objects/eye2/Closed.res" id="3_eer25"]
+[ext_resource type="Animation" uid="uid://h85fjblgerti" path="res://objects/eye2/Closed_001.res" id="4_ksx4x"]
+[ext_resource type="Animation" uid="uid://cs7vacvpbt8ap" path="res://objects/eye2/EyeBlink1.res" id="5_ld1lp"]
+[ext_resource type="Animation" uid="uid://e1idg5rfsxaq" path="res://objects/eye2/Eyeblionk2.tres" id="8_dsk33"]
+[ext_resource type="Animation" uid="uid://lytf31nnlhi7" path="res://objects/eye2/searching.tres" id="9_l7d37"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sx7il"]
 resource_name = "EyeArmature"
@@ -388,6 +388,27 @@ color = Color(0.901961, 0.345098, 0.160784, 1)
 
 [node name="RayIntersectsPlayer5" parent="Armature" instance=ExtResource("2_4p5c8")]
 transform = Transform3D(1, 0, 0, 0, 0.816964, -0.576689, 0, 0.576689, 0.816964, 0, 0.000292301, 2.40959)
+target_position = Vector3(0, 0, 100)
+collision_mask = 3
+collide_with_areas = true
+color = Color(0.901961, 0.345098, 0.160784, 1)
+
+[node name="RayIntersectsPlayer6" parent="Armature" instance=ExtResource("2_4p5c8")]
+transform = Transform3D(1, 0, 0, 0, 0.92901, -0.370055, 0, 0.370055, 0.92901, 0, 0.000292301, 2.40959)
+target_position = Vector3(0, 0, 100)
+collision_mask = 3
+collide_with_areas = true
+color = Color(0.901961, 0.345098, 0.160784, 1)
+
+[node name="RayIntersectsPlayer7" parent="Armature" instance=ExtResource("2_4p5c8")]
+transform = Transform3D(1, 0, 0, 0, 0.995417, -0.0956372, 0, 0.0956372, 0.995417, 0, 0.000292301, 2.40959)
+target_position = Vector3(0, 0, 100)
+collision_mask = 3
+collide_with_areas = true
+color = Color(0.901961, 0.345098, 0.160784, 1)
+
+[node name="RayIntersectsPlayer8" parent="Armature" instance=ExtResource("2_4p5c8")]
+transform = Transform3D(1, 0, 0, 0, 0.957712, -0.287728, 0, 0.287728, 0.957712, 0, 0.000292301, 2.40959)
 target_position = Vector3(0, 0, 100)
 collision_mask = 3
 collide_with_areas = true

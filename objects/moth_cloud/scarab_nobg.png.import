@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clh4gd4k3xfxt"
-path.s3tc="res://.godot/imported/cratejamdiff1.png-36f01b148da61fa4662aa9a1bd6cb345.s3tc.ctex"
+uid="uid://cu4gfddjt3r31"
+path.s3tc="res://.godot/imported/scarab_nobg.png-184d45a02caf00327cd803fa2fcabe36.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://cratejamdiff1.png"
-dest_files=["res://.godot/imported/cratejamdiff1.png-36f01b148da61fa4662aa9a1bd6cb345.s3tc.ctex"]
+source_file="res://objects/moth_cloud/scarab_nobg.png"
+dest_files=["res://.godot/imported/scarab_nobg.png-184d45a02caf00327cd803fa2fcabe36.s3tc.ctex"]
 
 [params]
 

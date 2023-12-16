@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://uil4n0h1ub3w"]
+[gd_scene load_steps=11 format=3 uid="uid://uil4n0h1ub3w"]
 
-[ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://box.tscn" id="1_njr1o"]
+[ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://objects/box.tscn" id="1_njr1o"]
 [ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="1_pxdj3"]
-[ext_resource type="PackedScene" uid="uid://jbk43htjdvrh" path="res://eye2.tscn" id="3_ytyl8"]
+[ext_resource type="PackedScene" uid="uid://jbk43htjdvrh" path="res://objects/eye2/eye2.tscn" id="3_ytyl8"]
+[ext_resource type="PackedScene" uid="uid://dsagyj5d84h8c" path="res://objects/moth_cloud/moth_cloud.tscn" id="4_pu483"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_tife1"]
 
@@ -102,3 +103,18 @@ shape = SubResource("BoxShape3D_7wing")
 
 [node name="eyejam2" parent="." instance=ExtResource("3_ytyl8")]
 transform = Transform3D(1, 0, 0, 0, 0.891418, -0.453182, 0, 0.453182, 0.891418, 0, 5.59333, -5.9331)
+
+[node name="MothClouds" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3089, 0, 0)
+
+[node name="MothCloud" parent="MothClouds" instance=ExtResource("4_pu483")]
+amount = 25
+lifetime = 10.0
+
+[node name="MothCloud2" parent="MothClouds" instance=ExtResource("4_pu483")]
+
+[node name="MothCloud3" parent="MothClouds" instance=ExtResource("4_pu483")]
+amount = 100
+lifetime = 40.0
+
+[node name="MothCloud4" parent="MothClouds" instance=ExtResource("4_pu483")]

@@ -4,3 +4,4 @@
 
 [node name="CameraManager" type="Node3D"]
 script = ExtResource("1_qnmim")
+camera_move_with_player_amount = Vector3(0.1, 0, 0)

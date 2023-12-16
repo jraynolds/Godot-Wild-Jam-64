@@ -20,6 +20,9 @@ func _ready():
 	raycasters.append($Armature/RayIntersectsPlayer3)
 	raycasters.append($Armature/RayIntersectsPlayer4)
 	raycasters.append($Armature/RayIntersectsPlayer5)
+	raycasters.append($Armature/RayIntersectsPlayer6)
+	raycasters.append($Armature/RayIntersectsPlayer7)
+	raycasters.append($Armature/RayIntersectsPlayer8)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

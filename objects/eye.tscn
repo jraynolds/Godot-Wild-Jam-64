@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://c556lsh06eq55"]
 
-[ext_resource type="Script" path="res://eye.gd" id="1_w56sr"]
-[ext_resource type="PackedScene" uid="uid://c5eoyvtff7fuc" path="res://components/ray_intersects_player.tscn" id="2_35pdb"]
+[ext_resource type="Script" path="res://objects/eye.gd" id="1_3rvnj"]
+[ext_resource type="PackedScene" uid="uid://c5eoyvtff7fuc" path="res://components/ray_intersects_player.tscn" id="2_3x5nr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_slgk8"]
 albedo_color = Color(1, 0, 0, 1)
@@ -70,7 +70,7 @@ _data = {
 }
 
 [node name="Eye" type="Node3D"]
-script = ExtResource("1_w56sr")
+script = ExtResource("1_3rvnj")
 alert_time = 2.0
 
 [node name="Rotateables" type="Node3D" parent="."]
@@ -95,7 +95,7 @@ spot_attenuation = 1e-05
 spot_angle = 9.7
 spot_angle_attenuation = 1e-05
 
-[node name="RayIntersectsPlayer" parent="Rotateables" instance=ExtResource("2_35pdb")]
+[node name="RayIntersectsPlayer" parent="Rotateables" instance=ExtResource("2_3x5nr")]
 target_position = Vector3(0, 0, 10)
 collision_mask = 3
 collide_with_areas = true

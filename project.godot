@@ -22,6 +22,8 @@ PlayerManager="*res://managers/player_manager.tscn"
 CameraManager="*res://managers/camera_manager.tscn"
 PostProcessingManager="*res://managers/post_processing_manager.tscn"
 OverlayManager="*res://managers/overlay_manager.tscn"
+LightManager="*res://managers/light_manager.tscn"
+BackgroundManager="*res://managers/background_manager.tscn"
 
 [input]
 

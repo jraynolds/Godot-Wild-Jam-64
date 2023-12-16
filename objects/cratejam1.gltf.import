@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d3xwxie2x3s0x"
-path="res://.godot/imported/cratejam1.gltf-c222f593c5fd881cf2c97e98e8939ebf.scn"
+path="res://.godot/imported/cratejam1.gltf-a2df7c7f017baa019220747a4a5dda0f.scn"
 
 [deps]
 
-source_file="res://cratejam1.gltf"
-dest_files=["res://.godot/imported/cratejam1.gltf-c222f593c5fd881cf2c97e98e8939ebf.scn"]
+source_file="res://objects/cratejam1.gltf"
+dest_files=["res://.godot/imported/cratejam1.gltf-a2df7c7f017baa019220747a4a5dda0f.scn"]
 
 [params]
 

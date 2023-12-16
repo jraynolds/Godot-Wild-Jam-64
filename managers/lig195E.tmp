@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://do54nbi1swkk7"]
+
+[ext_resource type="Texture2D" uid="uid://bfdkyibbek2ne" path="res://objects/moth_cloud/scarab.png" id="1_22thn"]
+[ext_resource type="Script" path="res://managers/light_manager.gd" id="1_gahhm"]
+
+[node name="LightManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gahhm")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 171.0
+offset_bottom = 117.0
+
+[node name="Panel" type="Panel" parent="PanelContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="LightTexture" type="TextureRect" parent="PanelContainer/Panel"]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 174.0
+offset_bottom = 117.0
+texture = ExtResource("1_22thn")
+expand_mode = 1
+stretch_mode = 4

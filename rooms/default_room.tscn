@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://s0hwb183511q"]
+
+[ext_resource type="PackedScene" uid="uid://cgxrgwrho35uv" path="res://environmental/background.tscn" id="1_b2h0p"]
+[ext_resource type="PackedScene" uid="uid://bj254rda7s3d0" path="res://environmental/bumpers.tscn" id="2_8arnu"]
+[ext_resource type="PackedScene" uid="uid://bkhd2idxxxh56" path="res://environmental/camera_3d.tscn" id="3_ptoec"]
+[ext_resource type="PackedScene" uid="uid://dkswcx1rkhlfi" path="res://environmental/directional_light_3d_2.tscn" id="4_th5um"]
+[ext_resource type="PackedScene" uid="uid://b71wm7e8y8gxo" path="res://environmental/floor.tscn" id="5_5cur4"]
+
+[node name="DefaultRoom" type="Node3D"]
+
+[node name="Background" parent="." instance=ExtResource("1_b2h0p")]
+
+[node name="Bumpers" parent="." instance=ExtResource("2_8arnu")]
+
+[node name="Camera3D" parent="." instance=ExtResource("3_ptoec")]
+
+[node name="DirectionalLight3D2" parent="." instance=ExtResource("4_th5um")]
+
+[node name="Floor" parent="." instance=ExtResource("5_5cur4")]
+
+[node name="Background2" parent="." instance=ExtResource("1_b2h0p")]
+transform = Transform3D(27.3224, 0, 0, 0, 8.81831, 0, 0, 0, 1, 0.0425882, -5.24759, 3.15135)
+
+[node name="Background3" parent="." instance=ExtResource("1_b2h0p")]
+transform = Transform3D(-6.00051e-07, 0, -10, -9.2413, 7.45645, 2.94262e-07, 10.1511, 6.78818, -3.23231e-07, 13.5978, -0.343325, -5.45851)
+
+[node name="Background4" parent="." instance=ExtResource("1_b2h0p")]
+transform = Transform3D(-6.0005e-07, 2.01357e-14, 10, 9.37583, 7.36527, 2.98546e-07, -10.0269, 6.88699, -3.19279e-07, -13.6829, -0.445251, -5.45851)

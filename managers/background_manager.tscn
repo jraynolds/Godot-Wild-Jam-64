@@ -24,10 +24,10 @@ albedo_texture = ExtResource("3_3moqh")
 material = SubResource("StandardMaterial3D_go0w6")
 
 [node name="BackgroundManager" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -38.0663)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 104.446, -293.461)
 script = ExtResource("1_mwciq")
-layer_2_move_mult = Vector3(0.001, 0.001, 0)
-layer_3_move_mult = Vector3(0.005, 0.005, 0)
+layer_2_move_mult = Vector3(0.01, 0.01, 0)
+layer_3_move_mult = Vector3(0.03, 0.03, 0)
 
 [node name="Background1" type="MeshInstance3D" parent="."]
 transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, 50.3033, -68.0458)

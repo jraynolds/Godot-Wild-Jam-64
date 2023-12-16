@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cgqo0sarsj7vc"]
+[gd_scene load_steps=3 format=3 uid="uid://cgqo0sarsj7vc"]
+
+[ext_resource type="PackedScene" uid="uid://s0hwb183511q" path="res://rooms/default_room.tscn" id="1_cojb4"]
+[ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="2_dcnhy"]
 
 [node name="Tutorial" type="Node3D"]
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="DefaultRoom" parent="Environment" instance=ExtResource("1_cojb4")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_dcnhy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7281, 0, -1.10714)

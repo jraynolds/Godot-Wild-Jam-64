@@ -25,6 +25,7 @@ OverlayManager="*res://managers/overlay_manager.tscn"
 LightManager="*res://managers/light_manager.tscn"
 BackgroundManager="*res://managers/background_manager.tscn"
 GameManager="*res://managers/game_manager.tscn"
+DebugManager="*res://managers/debug_manager.tscn"
 
 [input]
 

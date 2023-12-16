@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgxrgwrho35uv"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_tife1"]
+
+[node name="Background" type="MeshInstance3D"]
+transform = Transform3D(27.3224, 0, 0, 0, 8.81831, 0, 0, 0, 1, 0, 3.48272, -6.98658)
+mesh = SubResource("QuadMesh_tife1")

@@ -31,3 +31,6 @@ res://managers/game_manager.gd
 res://scenes/tutorial.tscn
 res://scenes/main.tscn
 res://managers/overlay_manager.gd
+res://rooms/default_room.tscn
+res://managers/debug_manager.tscn
+res://managers/debug_manager.gd

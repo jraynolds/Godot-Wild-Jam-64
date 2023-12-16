@@ -1,15 +1,14 @@
+Node3D
+MeshInstance3D
 Button
 Label
 VBoxContainer
 PanelContainer
 Control
-MeshInstance3D
 TextureRect
 Panel
-Node3D
 GPUParticles3D
 AnimationTree
 RayCast3D
 AnimationPlayer
 WorldEnvironment
-SpotLight3D

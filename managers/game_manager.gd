@@ -15,7 +15,10 @@ func _process(delta):
 
 
 func change_scene(scene: PackedScene):
-	get_tree().change_scene_to_packed(scene)
+	var response = await get_tree().change_scene_to_packed(scene)
+	assert(response == Error.OK)
+	await get_tree().create_timer(.001).timeout
+	assert(get_tree().current_scene)
 	signal_scene_loaded.emit(scene)
 
 

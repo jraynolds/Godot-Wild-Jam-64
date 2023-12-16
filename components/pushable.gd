@@ -26,8 +26,10 @@ func _process(delta):
 	if Input.is_action_just_pressed("character_activate"):
 		toggle_push()
 
+
 func move(translation : Vector3):
 	rigid_body.position += translation
+
 
 func on_body_entered(enterer: Node):
 	if enterer is CharacterBody3D: 

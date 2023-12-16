@@ -30,5 +30,9 @@ func show_box_interaction_readout():
 	set_interaction_text("Press E to grab/release.")
 
 
+func show_door_interaction_readout():
+	set_interaction_text("Press E to continue.")
+
+
 func _on_scene_loaded(scene: PackedScene):
 	visible = true

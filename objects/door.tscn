@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://blnxr0aog658g"]
+
+[ext_resource type="PackedScene" uid="uid://dleyxa01vvvsl" path="res://components/openable.tscn" id="1_qxocq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w5qr2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_u1qh8"]
+material = SubResource("StandardMaterial3D_w5qr2")
+size = Vector3(1, 2.365, 0.095)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6k28"]
+size = Vector3(1, 2.365, 0.095)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tiax8"]
+size = Vector3(1.965, 2.365, 1.075)
+
+[node name="Door" type="RigidBody3D"]
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_u1qh8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_l6k28")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_tiax8")
+
+[node name="Openable" parent="." node_paths=PackedStringArray("collision_area") instance=ExtResource("1_qxocq")]
+collision_area = NodePath("../Area3D")

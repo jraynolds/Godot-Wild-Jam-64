@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dleyxa01vvvsl"]
+
+[ext_resource type="Script" path="res://components/openable.gd" id="1_870j8"]
+[ext_resource type="PackedScene" uid="uid://cqh6v5wkcy5dk" path="res://components/player_detector.tscn" id="2_66lr4"]
+
+[node name="Openable" type="Node3D"]
+script = ExtResource("1_870j8")
+
+[node name="PlayerDetector" parent="." instance=ExtResource("2_66lr4")]

@@ -19,9 +19,6 @@ func _connect_signals():
 	GameManager.signal_scene_loaded.connect(_on_scene_loaded)
 
 
-func get_character(): return character
-
-
 func _on_scene_loaded(scene: PackedScene):
 	var character_group = get_tree().get_nodes_in_group("player")
 	if !len(character_group):

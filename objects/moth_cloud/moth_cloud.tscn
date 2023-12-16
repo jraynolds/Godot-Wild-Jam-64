@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsagyj5d84h8c"]
+[gd_scene load_steps=8 format=3 uid="uid://dsagyj5d84h8c"]
 
 [ext_resource type="Material" uid="uid://cob4b163dp8kc" path="res://objects/moth_cloud/firefly_material.tres" id="1_o4il4"]
+[ext_resource type="PackedScene" uid="uid://dgpvrko8pb2le" path="res://components/parent_to_player.tscn" id="2_14ptv"]
+[ext_resource type="PackedScene" uid="uid://xoqko7av22ar" path="res://components/light_adder.tscn" id="3_57kph"]
 
 [sub_resource type="Curve" id="Curve_t4y0c"]
 min_value = -2.0
@@ -37,3 +39,12 @@ explosiveness = 0.4
 randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_72w2s")
 draw_pass_1 = SubResource("SphereMesh_vrqkr")
+
+[node name="ParentToPlayer" parent="." node_paths=PackedStringArray("child_to_parent") instance=ExtResource("2_14ptv")]
+child_to_parent = NodePath("..")
+
+[node name="LightAdder" parent="." instance=ExtResource("3_57kph")]
+
+[connection signal="signal_parented_to_player" from="ParentToPlayer" to="LightAdder" method="add_light"]
+
+[editable path="ParentToPlayer"]

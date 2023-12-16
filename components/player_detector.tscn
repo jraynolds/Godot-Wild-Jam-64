@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqh6v5wkcy5dk"]
+
+[ext_resource type="Script" path="res://components/player_detector.gd" id="1_ucuoh"]
+
+[node name="PlayerDetector" type="Node3D"]
+script = ExtResource("1_ucuoh")

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cgqo0sarsj7vc"]
+[gd_scene load_steps=5 format=3 uid="uid://c2yeqjvyvpyvf"]
 
 [ext_resource type="PackedScene" uid="uid://s0hwb183511q" path="res://rooms/default_room.tscn" id="1_cojb4"]
 [ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="2_dcnhy"]
+[ext_resource type="PackedScene" uid="uid://dslug2d0r6rgt" path="res://objects/door_light.tscn" id="2_op46a"]
+[ext_resource type="PackedScene" uid="uid://dsagyj5d84h8c" path="res://objects/moth_cloud/moth_cloud.tscn" id="3_qtjyn"]
 
 [node name="Tutorial" type="Node3D"]
 
@@ -9,5 +11,19 @@
 
 [node name="DefaultRoom" parent="Environment" instance=ExtResource("1_cojb4")]
 
+[node name="Door" parent="Environment" instance=ExtResource("2_op46a")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.4571, 0.0429177, -0.676103)
+
+[node name="LightDetector" parent="Environment/Door" index="4"]
+light_level_required = 0.5
+
+[node name="MothCloud" parent="Environment" instance=ExtResource("3_qtjyn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.645487, 0, -2.09583)
+
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_dcnhy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7281, 0, -1.10714)
+
+[connection signal="signal_light_level_lost" from="Environment/Door/LightDetector" to="Environment/Door/Openable" method="set_openable" binds= [false]]
+[connection signal="signal_light_level_reached" from="Environment/Door/LightDetector" to="Environment/Door/Openable" method="set_openable" binds= [true]]
+
+[editable path="Environment/Door"]

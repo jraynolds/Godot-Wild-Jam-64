@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bj254rda7s3d0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wf5ym"]
-size = Vector3(25, 25, 0.5)
+size = Vector3(35, 25, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7wing"]
 size = Vector3(0.5, 25, 10)
@@ -18,15 +18,15 @@ axis_lock_angular_z = true
 freeze = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.54491)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.909495, 0, 2.54491)
 shape = SubResource("BoxShape3D_wf5ym")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.11993)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.05453, 0, -3.11993)
 shape = SubResource("BoxShape3D_wf5ym")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.7193, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.355, 0, 0)
 shape = SubResource("BoxShape3D_7wing")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="."]

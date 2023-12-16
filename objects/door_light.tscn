@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dslug2d0r6rgt"]
+
+[ext_resource type="PackedScene" uid="uid://blnxr0aog658g" path="res://objects/door.tscn" id="1_uy5um"]
+[ext_resource type="PackedScene" uid="uid://yuqojq7uuj2g" path="res://components/light_detector.tscn" id="2_ei5nb"]
+
+[node name="DoorLight" instance=ExtResource("1_uy5um")]
+
+[node name="LightDetector" parent="." index="4" instance=ExtResource("2_ei5nb")]
+
+[connection signal="signal_light_level_lost" from="LightDetector" to="Openable" method="set_openable" binds= [false]]
+[connection signal="signal_light_level_reached" from="LightDetector" to="Openable" method="set_openable" binds= [true]]

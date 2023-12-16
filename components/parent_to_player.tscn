@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgpvrko8pb2le"]
+
+[ext_resource type="Script" path="res://components/parent_to_player.gd" id="1_astn3"]
+[ext_resource type="PackedScene" uid="uid://cqh6v5wkcy5dk" path="res://components/player_detector.tscn" id="2_yy78i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uop08"]
+
+[node name="ParentToPlayer" type="Node3D"]
+script = ExtResource("1_astn3")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_uop08")
+
+[node name="PlayerDetector" parent="." node_paths=PackedStringArray("collision_area") instance=ExtResource("2_yy78i")]
+collision_area = NodePath("../Area3D")

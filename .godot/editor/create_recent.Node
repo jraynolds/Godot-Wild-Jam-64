@@ -1,4 +1,8 @@
 Node3D
+CollisionShape3D
+Area3D
+Node
+RigidBody3D
 MeshInstance3D
 Button
 Label
@@ -8,7 +12,3 @@ Control
 TextureRect
 Panel
 GPUParticles3D
-AnimationTree
-RayCast3D
-AnimationPlayer
-WorldEnvironment

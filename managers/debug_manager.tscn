@@ -5,4 +5,3 @@
 [node name="DebugManager" type="Node"]
 script = ExtResource("1_kgknt")
 game_debug = true
-character_debug = true

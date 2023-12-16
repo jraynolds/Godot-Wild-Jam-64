@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://yuqojq7uuj2g"]
+
+[ext_resource type="Script" path="res://components/light_detector.gd" id="1_l7rgl"]
+
+[node name="LightDetector" type="Node3D"]
+script = ExtResource("1_l7rgl")

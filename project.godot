@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Wild Jam 64"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scenes/main_screen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -24,6 +24,7 @@ PostProcessingManager="*res://managers/post_processing_manager.tscn"
 OverlayManager="*res://managers/overlay_manager.tscn"
 LightManager="*res://managers/light_manager.tscn"
 BackgroundManager="*res://managers/background_manager.tscn"
+GameManager="*res://managers/game_manager.tscn"
 
 [input]
 

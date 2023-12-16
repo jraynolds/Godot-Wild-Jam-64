@@ -8,8 +8,7 @@ var character_position : Vector3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	character = get_tree().get_nodes_in_group("player")[0]
-	last_character_position = character.global_position
+	GameManager.signal_scene_loaded.connect(_on_scene_loaded)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,7 +19,18 @@ func _process(delta):
 func get_character(): return character
 
 
+func _on_scene_loaded(scene: PackedScene):
+	var character_group = get_tree().get_nodes_in_group("player")
+	if !len(character_group):
+		return
+	character = character_group[0]
+	last_character_position = character.global_position
+	character_position = character.global_position
+
+
 func _physics_process(delta):
+	if !character:
+		return
 	var new_character_position = character.global_position
 	if new_character_position == character_position:
 		return

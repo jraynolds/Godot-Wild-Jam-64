@@ -24,3 +24,10 @@ res://managers/background_manager.tscn
 res://managers/background_manager.gd
 res://managers/camera_manager.gd
 res://managers/player_manager.gd
+res://scenes/main_screen.tscn
+res://scenes/main_screen.gd
+res://managers/game_manager.tscn
+res://managers/game_manager.gd
+res://scenes/tutorial.tscn
+res://scenes/main.tscn
+res://managers/overlay_manager.gd

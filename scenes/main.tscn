@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://uil4n0h1ub3w"]
 
-[ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://objects/box.tscn" id="1_njr1o"]
-[ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="1_pxdj3"]
-[ext_resource type="PackedScene" uid="uid://jbk43htjdvrh" path="res://objects/eye2/eye2.tscn" id="3_ytyl8"]
-[ext_resource type="PackedScene" uid="uid://dsagyj5d84h8c" path="res://objects/moth_cloud/moth_cloud.tscn" id="4_pu483"]
+[ext_resource type="PackedScene" uid="uid://ei0x2xtv40le" path="res://objects/box.tscn" id="1_p4f7b"]
+[ext_resource type="PackedScene" uid="uid://cd2fdl5jaf4ug" path="res://character.tscn" id="2_eg0un"]
+[ext_resource type="PackedScene" uid="uid://jbk43htjdvrh" path="res://objects/eye2/eye2.tscn" id="3_3hyaa"]
+[ext_resource type="PackedScene" uid="uid://dsagyj5d84h8c" path="res://objects/moth_cloud/moth_cloud.tscn" id="4_knlpm"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_tife1"]
 
@@ -45,7 +45,7 @@ shape = SubResource("BoxShape3D_te51r")
 transform = Transform3D(27.1529, 0, 0, 0, 0.1, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("BoxMesh_4fpqp")
 
-[node name="Box" parent="." instance=ExtResource("1_njr1o")]
+[node name="Box" parent="." instance=ExtResource("1_p4f7b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.796748, -0.423533)
 collision_layer = 4
 collision_mask = 0
@@ -54,7 +54,7 @@ freeze = true
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.979368, 0.202087, 0, -0.202087, 0.979368, 0, 3.05217, 9.2339)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_pxdj3")]
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_eg0un")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53551, 0.191677, 0.717319)
 collision_mask = 5
 axis_lock_linear_y = true
@@ -101,20 +101,20 @@ shape = SubResource("BoxShape3D_7wing")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0233, 0, 0)
 shape = SubResource("BoxShape3D_7wing")
 
-[node name="eyejam2" parent="." instance=ExtResource("3_ytyl8")]
+[node name="eyejam2" parent="." instance=ExtResource("3_3hyaa")]
 transform = Transform3D(1, 0, 0, 0, 0.891418, -0.453182, 0, 0.453182, 0.891418, 0, 5.59333, -5.9331)
 
 [node name="MothClouds" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3089, 0, 0)
 
-[node name="MothCloud" parent="MothClouds" instance=ExtResource("4_pu483")]
+[node name="MothCloud" parent="MothClouds" instance=ExtResource("4_knlpm")]
 amount = 25
 lifetime = 10.0
 
-[node name="MothCloud2" parent="MothClouds" instance=ExtResource("4_pu483")]
+[node name="MothCloud2" parent="MothClouds" instance=ExtResource("4_knlpm")]
 
-[node name="MothCloud3" parent="MothClouds" instance=ExtResource("4_pu483")]
+[node name="MothCloud3" parent="MothClouds" instance=ExtResource("4_knlpm")]
 amount = 100
 lifetime = 40.0
 
-[node name="MothCloud4" parent="MothClouds" instance=ExtResource("4_pu483")]
+[node name="MothCloud4" parent="MothClouds" instance=ExtResource("4_knlpm")]

@@ -5,12 +5,16 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	_connect_signals()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _connect_signals():
+	GameManager.signal_scene_loaded.connect(_on_scene_loaded)
 
 
 func set_interaction_text(text: String, show: bool = true):
@@ -24,3 +28,7 @@ func set_interaction_panel_visible(visible: bool):
 
 func show_box_interaction_readout():
 	set_interaction_text("Press E to grab/release.")
+
+
+func _on_scene_loaded(scene: PackedScene):
+	visible = true
